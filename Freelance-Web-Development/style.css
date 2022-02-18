@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Barlow:wght@600&family=Bebas+Neue&family=Fraunces:wght@700&family=Lobster&family=Open+Sans:wght@300&family=Oswald:wght@600&family=Outfit:wght@300;400;500&family=Pacifico&family=Poppins:wght@100;400;600&family=Praise&family=Press+Start+2P&family=Redacted+Script:wght@400;700&family=Source+Code+Pro:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* <---------------------------------------content 3--------------------------------------------> */
+
+.content3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #f4f5f8;
+}
+
+.content3 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: poppins;
+}
+
+.content3 .header .text-head {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.content3 .header .text {
+  font-size: 19px;
+  opacity: 90%;
+  margin-top: -20px;
+  margin-bottom: 100px;
+}
+
+.content3 .slideshow-container {
+  display: flex;
+  justify-content: center;
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+.content3 .mySlides {
+  display: none;
+  border-radius: 20px;
+  width: 69em;
+  height: 28em;
+  background-color: #ffffff;
+  margin: 100px 0;
+}
+
+.content3 .mySlides::after {
+  content: '';
+  position: absolute;
+  top: 6.5em;
+  right: 4em;
+  width: 8em;
+  height: 25em;
+  border-radius: 20px;
+  box-shadow: 149px 0px 0 20px #f4f5f8, 140px -30px 0 20px #f4f5f8;
+  background-color: transparent;
+  transform: rotate(-20deg);
+}
+
+.content3 .mySlides .header {
+  position: relative;
+  text-align: left;
+  top: 30px;
+  left: 50px;
+  width: 450px;
+}
+
+.content3 .mySlides .header .text-head {
+  position: relative;
+  font-weight: normal;
+  font-size: 27px;
+}
+
+.content3 .mySlides .header .text-head span {
+  color: rgb(0, 81, 255);
+}
+
+.content3 .mySlides .header .text {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.content3 .mySlides .recommended {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1148fd;
+  color: white;
+  bottom: 80px;
+  border-radius: 20px;
+  font-family: poppins;
+  width: 670px;
+  height: 170px;
+}
+
+.content3 .mySlides .recommended .text-head,
+.content3 .mySlides .recommended .text {
+  position: relative;
+  padding: 0 40px;
+  margin: 10px 0;
+}
+
+.content3 .mySlides .recommended .text-head {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content3 .slideshow-container .image-slide1 {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  z-index: 2;
+}
+
+.content3 .slideshow-container .image-slide2 {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  z-index: 2;
+}
+
+.content3 .slideshow-container .image-slide3 {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  z-index: 2;
+}
+
+.content3 .slideshow-container .image-slide4 {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  z-index: 2;
+}
+
+.content3 .slideshow-container img {
+  width: 440px;
+}
+
+.content3 .dot {
+  cursor: pointer;
+  padding: 20px 70px;
+  max-width: 350px;
+  /* background-color: #bbb; */
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.5s ease;
+  font-weight: 600;
+  font-family: poppins;
+  color: #0045c4c2;
+  user-select: none;
+}
+
+.content3 .dot:hover {
+  color: #0045c4;
+}
+
+.content3 .active {
+  color: #0045c4;
+  background-color: #7696ff3d;
+}
+
+.content3 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+  /* animation-delay: 0.2s; */
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* <----------------------------------------------content 4----------------------------------------> */
+
+.content4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider {
+  width: 1100px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  /* background: #d4d4d4; */
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+
+/* .slick-prev {
+  top: 100%;
+  left: -70px;
+}
+
+.slick-next {
+  top: 100%;
+  left: -30px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: rgb(0, 102, 255);
+  font-size: 40px;
+} */
+
+/* .slick-prev:before {
+  color: white;
+} */
+
+.content4 .arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 450px;
+  left: 55px;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+}
+
+.content4 .arrows .prev,
+.content4 .arrows .next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #1a5dff;
+  margin: 0 10px 0 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.content4 .arrows .prev {
+  color: #1a5dff;
+  background-color: #fff;
+}
+
+.content4 .arrows .prev:hover,
+.content4 .arrows .next:hover {
+  cursor: pointer;
+}
+
+.content4 .slider .box {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.content4 .slider .box .header {
+  position: relative;
+  top: 70px;
+  left: 30px;
+  width: 400px;
+  font-family: poppins;
+}
+
+.content4 .slider .box .header .text-header {
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+
+.content4 .slider .box .header .text {
+  font-size: 15px;
+  opacity: 0.6;
+  margin-bottom: 80px;
+}
+
+
+.content4 .slider .box .header .name {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.content4 .slider .box .header .name .location {
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+.content4 .slider .profile-pict {
+  position: fixed;
+  top: 0;
+  margin-left: 600px;
+  width: 30%;
+}
+
+.content4 .slider .profile-pict img {
+  border-radius: 20px;
+  width: 500px;
+  height: 600px;
+}
