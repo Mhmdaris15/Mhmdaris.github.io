@@ -1,2 +1,196 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slick 1</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="content3">
+    <div class="header">
+      <p class="text-head">How we cooperate with you</p>
+      <p class="text">
+        We offer many different levels of services to meet the operational
+        <br />
+        and financial goals of our clients.
+      </p>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)">Team Ekstention</span>
+      <span class="dot" onclick="currentSlide(2)">Project-based</span>
+      <span class="dot" onclick="currentSlide(3)">Time & Materials</span>
+      <span class="dot" onclick="currentSlide(4)">Customized Partnership</span>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="first-slide">
+          <div class="header">
+            <p class="text-head"> <span>Team extension</span> (Outstaffing)</p>
+            <p class="text">A fully dedicated remote team or person. Since the team might be working in places like New
+              York or Kiev, we take care of the logistics. You just pay for labor.
+            </p>
+          </div>
+          <div class="recommended">
+            <p class="text-head">Recommended for:</p>
+            <p class="text">Companies who want to have just one contact for the duration of the project</p>
+          </div>
+          <div class="image-slide1">
+            <img src="https://boostylabs.com/img/partnership_2.png" alt="image slide 1">
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="second-slide">
+          <div class="header">
+            <p class="text-head">Project-based (fixed price)</p>
+            <p class="text">A fully dedicated remote team or person. Since the team might be working in places like New
+              York or Kiev, we take care of the logistics. You just pay for labor.
+            </p>
+          </div>
+          <div class="recommended">
+            <p class="text-head">Recommended for:</p>
+            <p class="text">Classic model that guarantees the delivery of a predefined set of functionalities within a
+              specific time frame.
+            </p>
+          </div>
+          <div class="image-slide2">
+            <img src="https://boostylabs.com/img/partnership_1.png" alt="image slide 2">
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="third-slide">
+          <div class="header">
+            <p class="text-head">Time & Materials</p>
+            <p class="text">The client just pays only for development & design or consulting time
+            </p>
+          </div>
+          <div class="recommended">
+            <p class="text-head">Recommended for:</p>
+            <p class="text">Consultation purposes and/or to build an extension of your own teams to meet deadlines. For
+              short term projects without clear definitions.
+            </p>
+          </div>
+          <div class="image-slide3">
+            <img src="https://boostylabs.com/img/partnership_4.png" alt="image slide 3">
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="fourth-slide">
+          <div class="header">
+            <p class="text-head">Customized Partnership</p>
+            <p class="text">We are happy to explore other ways to be the right business partner for you. Book a
+              consultation now! We are committed to giving you our best.
+            </p>
+          </div>
+          <div class="recommended">
+            <p class="text-head">Recommended for:</p>
+            <p class="text">Companies who have reached their break-even point, raised Round B+ or have a significant
+              organic growth rate.
+            </p>
+          </div>
+          <div class="image-slide4">
+            <img src="https://boostylabs.com/img/partnership_3.png" alt="image slide 4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+
+  <div class="content4">
+
+    <div class="arrows">
+      <div class="prev">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </div>
+      <div class="next">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="box">
+        <div class="header">
+          <div class="text-header">Our Leaders</div>
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat ullam iste, ipsam
+            impedit cupiditate ipsum quibusdam saepe earum aut.</div>
+          <div class="name">
+            Muhammad Aris S.
+            <div class="location">Cibinong</div>
+          </div>
+        </div>
+        <div class="profile-pict">
+          <img src="https://cdn.bhdw.net/im/senku-ishigami-dr-stone-wallpaper-71116_w635.jpg" alt="" class="person1">
+        </div>
+      </div>
+      <div class="box">
+        <div class="header">
+          <div class="text-header">Our Leaders</div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsa vero beatae
+            necessitatibus. Repellendus consequuntur ratione fugit facilis numquam, quas dolor, odit odio pariatur saepe
+            laudantium dolorum totam temporibus! Itaque nesciunt ipsa cumque vero voluptatem esse ea nisi provident
+            impedit.</div>
+          <div class="name">
+            Fauzan Aziz
+            <div class="location">Bogor</div>
+          </div>
+        </div>
+        <div class="profile-pict">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/022/958/126/large/aerodan-razo-tsukasa-f.jpg?1577466294"
+            alt="" class="person2">
+        </div>
+      </div>
+      <div class="box">
+        <div class="header">
+          <div class="text-header">Our Leaders</div>
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat ullam iste, ipsam
+            impedit cupiditate ipsum quibusdam saepe earum aut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ab, nobis?</div>
+          <div class="name">
+            Name Person
+            <div class="location">Location</div>
+          </div>
+        </div>
+        <div class="profile-pict">
+          <img src="https://i.pinimg.com/originals/30/c1/29/30c12919ed81f094675b66bd307ba282.jpg" alt=""
+            class="person3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script type="text/javascript" src="script.js">
+  </script>
+</body>
+
 </html>
