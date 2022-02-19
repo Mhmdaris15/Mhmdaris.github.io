@@ -42,6 +42,14 @@ function showSlides(n) {
             prevArrow: $('.prev'),
             nextArrow: $('.next'),
         });
+
+        $(".partners").slick({
+            speed: 400,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
+            cssEase: 'ease-in-out',
+        })
     });
 
 }
