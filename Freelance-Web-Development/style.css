@@ -694,7 +694,7 @@ article .get-started {
 footer {
     background-color: #0e1013;
     /* background-color: peachpuff; */
-    height: 100vh;
+    height: 200vh;
     margin-top: 200px;
     margin-bottom: -200px;
 }
@@ -786,13 +786,143 @@ footer .top-area-footer .right-side ul li input[type=file] {
     border: none;
 }
 
-
-
 footer .top-area-footer .right-side ul li input[type=submit] {
     border: none;
     margin-left: 400px;
     width: 100px;
-    /* height: 100px; */
     background-color: #0044ff;
     border-radius: 10px;
+}
+
+footer .top-area-footer .right-side ul li input[type=file]:hover,
+footer .top-area-footer .right-side ul li input[type=submit]:hover {
+    cursor: pointer;
+}
+
+footer .bot-area-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 100px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: poppins;
+}
+
+footer .bot-area-footer a {
+    text-decoration: none;
+}
+
+footer .bot-area-footer .contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 60px;
+    width: 250px;
+    height: 400px;
+}
+
+footer .bot-area-footer .services,
+footer .bot-area-footer .mobile,
+footer .bot-area-footer .blockchain,
+footer .bot-area-footer .industries,
+footer .bot-area-footer .list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 100px;
+    width: 200px;
+}
+
+footer .bot-area-footer .contact .name-company {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .bot-area-footer .contact .copyright {
+    position: relative;
+    text-align: center;
+    width: 170px;
+    font-size: 10px;
+    margin-bottom: 15px;
+    opacity: 50%;
+}
+
+footer .bot-area-footer .contact .media-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+footer .bot-area-footer .contact .media-social a {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+footer .bot-area-footer .contact .booking {
+    margin-top: 20px;
+}
+
+footer .bot-area-footer .contact .booking a {
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: black;
+}
+
+footer .bot-area-footer .thead {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+footer .bot-area-footer .list .thead {
+    margin-bottom: 10px;
+}
+
+footer .bot-area-footer .list a.thead:hover {
+    color: rgb(0, 119, 255);
+}
+
+footer .bot-area-footer .list .blog {
+    margin-top: 20px;
+}
+
+footer .bot-area-footer .list a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .bot-area-footer .services a,
+footer .bot-area-footer .mobile a,
+footer .bot-area-footer .blockchain a,
+footer .bot-area-footer .industries a,
+footer .bot-area-footer .list .content a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 25px;
+    opacity: 80%;
+}
+
+footer .bot-area-footer .list .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
