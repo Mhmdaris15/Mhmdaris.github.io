@@ -13,8 +13,12 @@
 </head>
 
 <body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./HP-6s-1920x1080-3_def.mp4" type="video/mp4">
+    </video> -->
     <header>
         <nav>
+            <i class="fas fa-bars" onclick="dropDownMenu()"></i>
             <div class="logo">
                 <span class="latin">
                     <a href="">Aris De Restaurant</a>
@@ -33,16 +37,22 @@
             </div>
             <div class="nav-bar">
                 <ul>
-                    <li><a href="">Restaurants</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Recipes</a></li>
-                    <li><a href="">Destinations</a></li>
-                    <li><a href="">Countries</a></li>
+                    <li><a href="#restaurant">Restaurants</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#countries">Countries</a></li>
                 </ul>
                 <i class="far fa-user"></i>
             </div>
         </nav>
-        <div class="live-background"></div>
+        <ul class="nav-bar-dropdown">
+            <li><a href="#restaurant">Restaurants</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#countries">Countries</a></li>
+        </ul>
         <div class="content">
             <h1>All Food, Explore a world of savours</h1>
             <div class="hero-btn"><a href="">Pick a City</a></div>
@@ -54,7 +64,7 @@
             <p>It’s time to quench your thirst of discoveries and surprise: we have selected for you our best
                 restaurants & bars.</p>
         </section>
-        <section class="row">
+        <section class="row row-reverse" id="restaurant">
             <article>
                 <h1>Celebrate your own Valentine's Day ❤</h1>
                 <p>Choose your destination, book a table at the restaurant of your choice and offer a romantic
@@ -66,7 +76,7 @@
                 <div class="img-name">Valentine's Day</div>
             </aside>
         </section>
-        <section class="row">
+        <section class="row" id="destination">
             <aside>
                 <img src="./team-lunch.jpg" alt="">
                 <div class="img-name">Team lunch</div>
@@ -78,7 +88,7 @@
                 <div class="row-btn">Discover and book a table</div>
             </article>
         </section>
-        <section class="row">
+        <section class="row row-reverse" id="menu">
             <article>
                 <h1>The Burger: A Global Dish With International Origins</h1>
                 <p>Discover the origins of the hamburger on a tour of the best burgers in New York City, London, Sydney
@@ -90,7 +100,7 @@
                 <div class="img-name">English Burger</div>
             </aside>
         </section>
-        <section class="row">
+        <section class="row" id="recipes">
             <aside>
                 <img src="./Recipe Saint-Pierre au Soleil.jpg" alt="">
                 <div class="img-name">Recipe Saint-Pierre au Soleil</div>
@@ -120,9 +130,9 @@
             </ul>
         </section>
         <hr>
-        <section class="information-container">
+        <section class="information-container" id="countries">
             <div class="about">
-                <button class="about-expanded">
+                <button class="about-expanded" onclick="dropDownAbout()">
                     <h2>About · France</h2>
                     <i class="fas fa-angle-down"></i>
                 </button>
@@ -235,6 +245,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
