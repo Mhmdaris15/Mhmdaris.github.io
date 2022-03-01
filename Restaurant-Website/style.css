@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    /* width: ; */
     font-family: 'Cabin', sans-serif;
 }
 
@@ -41,6 +42,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 9;
 }
 
 #myVideo {
@@ -268,6 +270,65 @@ main .row article div:hover {
     background-color: darkblue;
 }
 
+
+aside.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./geometry-bg.jpg);
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+aside .profile-inner {
+    background-color: transparent;
+    width: 50%;
+    height: 70%;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    position: relative;
+    right: 10%;
+    top: 10%;
+    /* padding: 30% 0; */
+}
+
+.profile .profile-inner h1 {
+    display: block;
+    margin: 20px 0 0;
+    font-size: 22px;
+}
+
+.profile .profile-inner h2 {
+    display: block;
+    margin: 5px 0 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.profile .profile-inner p {
+    display: block;
+    margin: 20px 0;
+    color: #003653;
+    font-size: 18px;
+}
+
+
+.profile img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    /* padding: 30% 0; */
+    border-radius: 50%;
+}
+
 /* ADVANTAGE */
 
 .advantage {
@@ -473,7 +534,7 @@ main .row article div:hover {
 
 hr {
     position: relative;
-    width: 120%;
+    width: 115%;
     left: -100px;
 }
 
@@ -610,6 +671,16 @@ hr {
         margin-left: 10px;
     }
 
+
+    aside.profile .profile-inner {
+        width: 95%;
+        top: 0;
+        right: 0;
+    }
+
+    aside.profile .profile-inner img {
+        width: 40%;
+    }
 
     main section.row {
         flex-direction: column;
